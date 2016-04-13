@@ -41,7 +41,7 @@ git push origin my-new-feature
 vi file
 git add file
 git commit -m "Fixed ... "
-git push
+git push -u origin master
 ```
 
 ## License
