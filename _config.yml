@@ -3,7 +3,7 @@ title: Your Name
 email: Your Email
 description: "Your Description"
 username: andrechristoga
-baseurl: "/"
+baseurl: ""
 url: ""
 paginate: 4
 paginate_path: "page/:num/"
