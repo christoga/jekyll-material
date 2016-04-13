@@ -1,6 +1,9 @@
 ![Jekyll-Material preview](img/preview.png)
 # Jekyll-Material
 Material Design interfaces for jekyll.
+It's pretty minimal, but leverages large type and drastic contrast to make a statement, on all devices.
+
+Jekyll-Material was crafted with 💙 by Andre Christoga [@andrechristoga](https://twitter.com/andrechristoga).
 ___
 
 ## Contributing
