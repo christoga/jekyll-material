@@ -39,7 +39,7 @@ git push origin my-new-feature
 ### Other thing
 ```
 vi file
-git add .
+git add file
 git commit -m "Fixed ... "
 git push
 ```
