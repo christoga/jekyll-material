@@ -1,0 +1,15 @@
+# Site settings
+title: Andre Christoga
+email: andre.christoga@gmail.com
+description: "Tech geek, Technologist, Frontend Dev, Developer, Nerdy Boy, Technokid!"
+username: andrechristoga
+baseurl: "/blog"
+url: "http://christoga.github.io/blog"
+paginate: 4
+paginate_path: "page/:num/"
+
+# Build settings`
+markdown: kramdown
+permalink: pretty
+gems: [jekyll-paginate]
+rouge: pygments

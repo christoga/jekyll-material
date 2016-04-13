@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+  <h1>{{ page.title }}</h1>
+  <p class="meta">{{ page.date | date: "%-d %B %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  {{ content }}
+  <div class="mdl-card__actions mdl-card--border" align="center">
+                <!-- <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                  Share :
+                </a> -->
+                <br>
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored mdl-button--accent">
+                  <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url }}"><i class="fa fa-facebook"></i></a>
+                </button>
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored mdl-button--accent">
+                  <a href="https://twitter.com/share?text={{ page.title }} via @andrechristoga&url={{ page.url }}"><i class="fa fa-twitter"></i></a>
+                </button>
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored mdl-button--accent">
+                  <a href="https://plus.google.com/share?url={{ page.url }}"><i class="fa fa-google-plus"></i></a>
+                </button>
+              </div>
+  <section>
+    <div id="disqus_thread"></div>
+  </section>
+</div>
+<script type="text/javascript">
+    var disqus_shortname = 'andrechristoga';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>How to get HTTPS Protocol using .htaccess</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tech geek, Technologist, Frontend Dev, Developer, Nerdy Boy, Technokid!">
+    <link rel="canonical" href="http://christoga.github.io/blog/blog/tips-tricks/2015/12/12/https-protocol/">
+    <meta property="og:site_name" content="Andre Christoga" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Andre Christoga" />
+    <meta property="og:description" content="Tech geek, Technologist, Frontend Dev, Developer, Nerdy Boy, Technokid!" />
+    <meta property="og:url" content="http://christoga.github.io/blog" />
+    <meta name="twitter:card" content="Andre Christoga" />
+    <meta name="twitter:title" content="Andre Christoga" />
+    <meta name="twitter:username" content="andrechristoga" />
+    <meta name="twitter:description" content="Tech geek, Technologist, Frontend Dev, Developer, Nerdy Boy, Technokid!" />
+    <meta name="twitter:url" content="http://christoga.github.io/blog" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.blue-light_blue.min.css" />
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Inconsolata:400,700' type='text/css'>
+    <link rel="stylesheet" href="/blog/css/main.css">
+
+</head>
+
+
+<body>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-32539024-2', 'http://christoga.github.io/blog');
+    ga('send', 'pageview');
+
+  </script>
+
+  <div class="mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+
+    <header class="mdl-layout__header">
+  <div class="mdl-layout__header-row">
+    <span class="mdl-layout-title"><a class="site-title" href="/blog/">Andre Christoga</a></span>
+    <div class="mdl-layout-spacer"></div>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link site-tab" href="http://christo.js.org/about">About</a>      
+    </nav>
+  </div>
+</header>
+<div class="mdl-layout__drawer">
+  <span class="mdl-layout-title"><a href="/blog/" style="text-decoration:none;color:#757575">Andre Christoga</a></span>
+  <nav class="mdl-navigation">
+    <a class="mdl-navigation__link site-tab" href="http://christo.js.org/about">About</a>    
+  </nav>
+</div>
+
+
+    <main class="layout-main mdl-layout__content">
+      <div class="demo-container mdl-grid">
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+  <h1>How to get HTTPS Protocol using .htaccess</h1>
+  <p class="meta">12 December 2015 • Andre Christoga</p>
+  <p>Sometimes people more often to use https then http, Why?
+<strong>HTTP</strong> is an abbreviation of <strong>Hyper Text Transfer Protocol</strong> and <strong>HTTPS</strong> is an abbreviation of <strong>Hyper Text Transfer Protocol Secured</strong></p>
+
+<p>With <strong>HTTPS</strong> your site will be protected from hacker, virus,bot and others…</p>
+
+<h2 id="how-to-get-https-protocol">How to get HTTPS protocol?</h2>
+
+<p>To get https protocol you need to have a file named <code class="highlighter-rouge">.htaccess</code>, 
+Put this code in your <code class="highlighter-rouge">.htaccess</code>:</p>
+
+<p><code class="highlighter-rouge">
+RewriteEngine on
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+</code></p>
+
+<p>The code if you have a proxy in front of your server performing TLS termination :
+<code class="highlighter-rouge">
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+</code></p>
+
+<h2 id="about-htaccess">About <code class="highlighter-rouge">.htaccess</code></h2>
+
+<p>A <code class="highlighter-rouge">.htaccess</code> (hypertext access) file is a directory-level configuration file supported by several web servers, that allows for decentralized management of web server configuration. They are placed inside the web tree, and are able to override a subset of the server’s global configuration for the directory that they are in, and all sub-directories.[1]</p>
+
+<p>The original purpose of .htaccess—reflected in its name—was to allow per-directory access control by, for example, requiring a password to access the content. More commonly, however, the .htaccess files override many other configuration settings such as content type, character set, CGI handlers, etc.</p>
+
+  <div class="mdl-card__actions mdl-card--border" align="center">
+                <!-- <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                  Share :
+                </a> -->
+                <br>
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored mdl-button--accent">
+                  <a href="https://www.facebook.com/sharer/sharer.php?u=/tips-tricks/2015/12/12/https-protocol/"><i class="fa fa-facebook"></i></a>
+                </button>
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored mdl-button--accent">
+                  <a href="https://twitter.com/share?text=How to get HTTPS Protocol using .htaccess via @andrechristoga&url=/tips-tricks/2015/12/12/https-protocol/"><i class="fa fa-twitter"></i></a>
+                </button>
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored mdl-button--accent">
+                  <a href="https://plus.google.com/share?url=/tips-tricks/2015/12/12/https-protocol/"><i class="fa fa-google-plus"></i></a>
+                </button>
+              </div>
+  <section>
+    <div id="disqus_thread"></div>
+  </section>
+</div>
+<script type="text/javascript">
+    var disqus_shortname = 'andrechristoga';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+      </div>
+
+      <footer class="mdl-mini-footer layout-footer">
+  <div class="mdl-mini-footer--left-section">
+    <!-- <ul class="mdl-mini-footer--link-list">
+      <li>
+        <a href="mailto:andre.christoga@gmail.com">
+          <i class="fa fa-envelope-o fa-2 fa-gray"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/christoga">
+          <span>
+            <i class="fa fa-github fa-2 fa-gray"></i>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/andrechristoga">
+          <span>
+            <i class="fa fa-twitter fa-2 fa-gray"></i>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/andrechristoga">
+          <span>
+            <i class="fa fa-facebook fa-2 fa-gray"></i>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="https://instagram.com/andrechristoga">
+          <span>
+            <i class="fa fa-instagram fa-2 fa-gray"></i>
+          </span>
+        </a>
+        <li>
+        <a href="https://plus.google.com/+andrechristoga">
+          <span>
+            <i class="fa fa-google-plus fa-2 fa-gray"></i>
+          </span>
+        </a>
+      </li>
+      </li>
+    </ul> -->
+    <h6>&copy; Andre Christoga 2016</h6>
+  </div>
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+  <script src="http://christoga.github.io/blog/js/jquery.min.js"></script>
+  <script src="http://christoga.github.io/blog/js/main.js"></script>
+</footer>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
