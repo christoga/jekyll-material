@@ -14,7 +14,7 @@ instagram: username
 google_plus: username
 github: username
 
-# Build settings`
+# Build settings
 markdown: kramdown
 permalink: pretty
 gems: [jekyll-paginate]
