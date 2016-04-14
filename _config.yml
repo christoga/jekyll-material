@@ -8,6 +8,13 @@ url: ""
 paginate: 4
 paginate_path: "page/:num/"
 
+# Social links
+facebook: username
+twitter: username
+instagram: username
+google_plus: username
+github: username
+
 # Build settings`
 markdown: kramdown
 permalink: pretty
