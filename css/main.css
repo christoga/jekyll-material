@@ -73,6 +73,10 @@ img {
   background-color: white;
 }
 
+.site-title {
+  margin-left: 10px;
+}
+
 .site-title,
 .site-title:hover,
 .site-title:visited {
