@@ -13,6 +13,7 @@ twitter: username
 instagram: username
 google_plus: username
 github: username
+disqus: username
 
 # Build settings
 markdown: kramdown
