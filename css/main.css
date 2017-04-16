@@ -200,7 +200,9 @@ img {
 }
 
 .post-cover {
-  height: 200px;  
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 
 .post-content { margin: 0 0 30px; }
