@@ -9,8 +9,8 @@ layout: default
     {% for post in paginator.posts %}
       <li>
         <div class="mdl-card mdl-shadow--2dp layout-card">
-          {% if post.header_image %}
-          <div class="mdl-card__media mdl-color-text--grey-50" style="background-image: url('http://christo.js.org/blog/{{ post.header_image }}');">
+          {% if post.cover %}
+          <div class="mdl-card__media mdl-color-text--grey-50" style="background-image: url('{{ post.cover }}');">
           </div>
           {% endif %}
           <div class="mdl-card__title">
