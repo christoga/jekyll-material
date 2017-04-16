@@ -1,5 +1,12 @@
-<footer class="mdl-mini-footer layout-footer">
-  <div class="mdl-mini-footer--left-section">
+<footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo">&copy; {{ site.title }} 20{{ site.time | date: '%y' }}</div>
+    <ul class="mdl-mini-footer__link-list">
+      <li><a href="#">About</a></li>
+      <!-- <li><a href="#">Privacy & Terms</a></li> -->
+    </ul>
+  </div>
+  <div class="mdl-mini-footer__right-section">
     <ul class="mdl-mini-footer--link-list">
       <li>
         <a href="https://github.com/{{ site.github }}">          
@@ -27,9 +34,8 @@
         </a>
       </li>
     </ul>
-    <h6>&copy; {{ site.title }} 20{{ site.time | date: '%y' }}</h6>
   </div>
-  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>  
-  <script src="{{ site.url }}/js/jquery.min.js"></script>
-  <script src="{{ site.url }}/js/main.js"></script>
 </footer>
+  <!-- <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>  
+  <script src="{{ site.url }}/js/jquery.min.js"></script>
+  <script src="{{ site.url }}/js/main.js"></script> -->
