@@ -9,8 +9,8 @@ layout: default
     {% for post in paginator.posts %}
       <li>
         <div class="mdl-card mdl-shadow--2dp layout-card">
-          {% if post.header_image %}
-          <div class="mdl-card__media mdl-color-text--grey-50" style="background-image: url('http://christo.js.org/blog/{{ post.header_image }}');">
+          {% if post.cover %}
+          <div class="mdl-card__media mdl-color-text--grey-50" style="background-image: url('{{ post.cover }}');">
           </div>
           {% endif %}
           <div class="mdl-card__title">
@@ -21,7 +21,7 @@ layout: default
           <div class="mdl-card__supporting-text">
             <span class="post-date">{{ post.date | date: "%-d %B %Y" }}</span>
             <p class="post-preview">
-              {{ post.content | strip_html | truncatewords:35}}
+              {{ post.content | strip_html | truncatewords:20}}
             </p>
           </div>
         </div>
@@ -35,7 +35,7 @@ layout: default
     <a href="{{ site.url }}{{ paginator.previous_page_path }}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">Before</a>
   {% else %}
   {% endif %}
-  <span class="page_number ">Halaman: {{ paginator.page }} dari {{ paginator.total_pages }}</span>
+  <span class="page_number ">Halaman: {{ paginator.page }} from {{ paginator.total_pages }}</span>
   {% if paginator.next_page %}
     <a href="{{ site.url }}{{ paginator.next_page_path }}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">Next</a>
   {% else %}

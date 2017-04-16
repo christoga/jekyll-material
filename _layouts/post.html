@@ -3,24 +3,20 @@ layout: default
 ---
 
 <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+  <div class="demo-crumbs mdl-color-text--grey-500">
+    {{ page.categories }} &gt; {{ page.title }}
+  </div>  
+  {% if page.cover %}<br><img src="{{ page.cover }}" class="post-cover" />{% endif %}
   <h1>{{ page.title }}</h1>
   <p class="meta">{{ page.date | date: "%-d %B %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   {{ content }}
-  <div class="mdl-card__actions mdl-card--border" align="center">
-                <!-- <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                  Share :
-                </a> -->
-                <br>
-                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored mdl-button--accent">
-                  <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url }}"><i class="fa fa-facebook"></i></a>
-                </button>
-                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored mdl-button--accent">
-                  <a href="https://twitter.com/share?text={{ page.title }} via @andrechristoga&url={{ page.url }}"><i class="fa fa-twitter"></i></a>
-                </button>
-                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored mdl-button--accent">
-                  <a href="https://plus.google.com/share?url={{ page.url }}"><i class="fa fa-google-plus"></i></a>
-                </button>
-              </div>
+  <div class="mdl-card__actions mdl-card--border" align="center"><br>
+    <br>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" style="width:100%;height: 500%">
+      <a href="https://twitter.com/share?text={{ page.title }} via @andrechristoga&url={{ page.url }}"><i class="fa fa-twitter fa-2x" style="margin-top:11px;"></i></a>
+    </button>
+  </div>
+  <br><br>
   <section>
     <div id="disqus_thread"></div>
   </section>
