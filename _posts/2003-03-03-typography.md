@@ -5,11 +5,16 @@ date: 2003-03-03
 categories: lifestyle
 author: Yourself
 ---
-# h1 Heading <br>
-## h2 Heading <br>
-### h3 Heading <br>
-#### h4 Heading <br>
-##### h5 Heading <br>
+# h1 Heading
+
+## h2 Heading
+
+### h3 Heading
+
+#### h4 Heading
+
+##### h5 Heading
+
 ###### h6 Heading
 
 ___
@@ -24,7 +29,11 @@ Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et l
 _rendered as italicized text_ <br>
 ~~Strike through this text.~~ <br>
 
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+{% highlight javascript linenos %}
+ console.log('hello world')
+{% endhighlight %}
+
+> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt ducimus autem, architecto expedita ipsa! Quia animi reprehenderit dicta voluptates ea, molestias eos natus incidunt, aliquid. Quis ea itaque labore in.
 
 + Lorem ipsum dolor sit amet
 + Consectetur adipiscing elit
