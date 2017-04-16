@@ -5,7 +5,7 @@ baseurl: "/jekyll-material"
 url: "https://christoga.github.io/jekyll-material"
 paginate: 4
 paginate_path: "page/:num/"
-color: blue-light_blue
+color: indigo-pink
 
 # Author social links
 social:
