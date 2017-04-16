@@ -1,25 +1,28 @@
 ---
 layout: post
-title: Hello World!
+title: Markdown Typography
 date: 2003-03-03
 categories: lifestyle
 author: Yourself
 ---
-# h1 Heading
-## h2 Heading
-### h3 Heading
-#### h4 Heading
-##### h5 Heading
+# h1 Heading <br>
+## h2 Heading <br>
+### h3 Heading <br>
+#### h4 Heading <br>
+##### h5 Heading <br>
 ###### h6 Heading
+
 ___
+
 ---
+
 ***
 
 Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.
 
-**rendered as bold text**
-_rendered as italicized text_
-~~Strike through this text.~~
+**rendered as bold text** <br>
+_rendered as italicized text_ <br>
+~~Strike through this text.~~ <br>
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
 
