@@ -1,20 +1,21 @@
 # Site settings
-title: Your Name
-email: Your Email
+title: Jekyll Material
 description: "Your Description"
-baseurl: ""
-url: ""
+baseurl: "/jekyll-material"
+url: "https://christoga.github.io/jekyll-material"
 paginate: 4
 paginate_path: "page/:num/"
 color: blue-light_blue
 
-# Social links
-facebook: username
-twitter: username
-instagram: username
-google_plus: username
-github: username
-disqus: username
+# Author social links
+social:
+  facebook: username
+  twitter: username
+  instagram: username
+  google_plus: username
+  github: username
+  email: andrechristoga@gmail.com
+  disqus: username
 
 # Build settings
 markdown: kramdown
