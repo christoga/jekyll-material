@@ -3,6 +3,7 @@ layout: post
 title: Welcome To Jekyll
 date: 1999-03-11
 categories: Example
+cover: http://placehold.it/1024x380?text=Welcome+To+Jekyll
 author: Yourself
 ---
 

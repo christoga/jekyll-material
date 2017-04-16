@@ -3,6 +3,7 @@ layout: post
 title: Markdown Typography
 date: 2003-03-03
 categories: Example
+cover: http://placehold.it/1024x380?text=Tt
 author: Yourself
 ---
 # h1 Heading

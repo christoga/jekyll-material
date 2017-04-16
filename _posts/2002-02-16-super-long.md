@@ -3,6 +3,7 @@ layout: post
 title: Some articles are just so long they deserve a really long title to see if things will break well
 date: 2002-02-16
 categories: Example
+cover: http://placehold.it/1024x380?text=Super+longgggg
 author: Yourself
 ---
 
