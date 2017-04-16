@@ -265,9 +265,13 @@ pre { white-space: pre; overflow: auto; }
 .post pre code { border: none; }
 
 .twitter-btn { 
-  background-color: #4099ff; 
+  background-color: #1dcaff;
   width:100%;
   height: 500%;
+}
+
+.twitter-btn:hover {
+  background-color: #00aced;
 }
 /* media queries */
 /* ----------------------------------------------------------*/
