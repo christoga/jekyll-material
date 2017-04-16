@@ -209,6 +209,10 @@ img {
   margin-top: 5px;
 }
 
+.post-cover {
+  height: 200px;  
+}
+
 .post-content { margin: 0 0 30px; }
 
 .post-content > * { margin: 20px 0; }
