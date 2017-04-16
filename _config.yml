@@ -1,6 +1,6 @@
 # Site settings
 title: Jekyll Material
-description: "Your Description"
+description: "A material design Jekyll theme."
 baseurl: "/jekyll-material"
 url: "https://christoga.github.io/jekyll-material"
 paginate: 4
