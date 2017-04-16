@@ -1,18 +1,27 @@
 ---
 layout: post
-title: Getting Started
+title: Welcome To Jekyll
 date: 1999-03-11
 categories: lifestyle
 author: Yourself
 ---
 
-If you're completely new to Jekyll, I recommend checking out the documentation at [http://jekyllrb.com]
+You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-## Installing Jekyll
+To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
-If you don't have Jekyll already installed, you will need to go ahead and do that. <br>
-{% highlight shell linenos %}
- $ gem install jekyll
- $ jekyll -v # Verify your Jekyll version
- jekyll 3.0.1
+Jekyll also offers powerful support for code snippets:
+
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
+
+Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+
+[jekyll-docs]: http://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
