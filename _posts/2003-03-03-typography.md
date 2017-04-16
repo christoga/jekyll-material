@@ -2,7 +2,7 @@
 layout: post
 title: Markdown Typography
 date: 2003-03-03
-categories: lifestyle
+categories: Example
 author: Yourself
 ---
 # h1 Heading

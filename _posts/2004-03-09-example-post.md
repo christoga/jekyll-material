@@ -2,7 +2,7 @@
 layout: post
 title: My Example Post
 date: 2004-03-09
-categories: lifestyle
+categories: Example
 cover: http://christo.ga/cdn/2017.png
 author: Yourself
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Some articles are just so long they deserve a really long title to see if things will break well
 date: 2002-02-16
-categories: lifestyle
+categories: Example
 author: Yourself
 ---
 

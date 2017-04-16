@@ -2,7 +2,7 @@
 layout: post
 title: Welcome To Jekyll
 date: 1999-03-11
-categories: lifestyle
+categories: Example
 author: Yourself
 ---
 
