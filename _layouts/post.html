@@ -13,7 +13,7 @@ layout: default
   <div class="mdl-card__actions mdl-card--border" align="center"><br>
     <br>
     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect twitter-btn">
-      <a href="https://twitter.com/share?text={{ page.title }} via @{{ page.twitter }}&url={{ page.url }}"><i class="fa fa-twitter fa-2x" style="margin-top:11px;"></i></a>
+      <a href="https://twitter.com/intent/tweet?text={{ page.title }}&amp;via={{ site.social.twitter }}&amp;url={{ site.url }}{{ page.url }}"><i class="fa fa-twitter fa-2x" style="margin-top:11px;"></i></a>
     </button>
   </div>
   <br><br>
@@ -22,7 +22,7 @@ layout: default
   </section>
 </div>
 <script type="text/javascript">
-    var disqus_shortname = '{{ page.disqus }}';
+    var disqus_shortname = '{{ site.social.disqus }}';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
