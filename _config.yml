@@ -6,6 +6,7 @@ baseurl: ""
 url: ""
 paginate: 4
 paginate_path: "page/:num/"
+color: blue-light_blue
 
 # Social links
 facebook: username
